@@ -12,16 +12,6 @@ $(document).keypress(function() {
   }
 })
 
-$("h1").tap(function() {
-  if (!startGame) {
-      $("h1").text("Press a Key to Start");
-      nextSequence();
-      startGame=true;
-  }
-})
-
-
-
 function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
