@@ -12,6 +12,14 @@ $(document).keypress(function() {
   }
 })
 
+$("h1").click(function() {
+  if (!startGame) {
+      $("h1").text("Press a Key to Start");
+      nextSequence();
+      startGame=true;
+  }
+})
+
 
 
 function playSound(name) {
