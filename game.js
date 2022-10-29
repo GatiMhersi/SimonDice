@@ -12,7 +12,7 @@ $(document).keypress(function() {
   }
 })
 
-$("h1").click(function() {
+$("h1").tap(function() {
   if (!startGame) {
       $("h1").text("Press a Key to Start");
       nextSequence();
